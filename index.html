@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UltraFetch | Media Downloader</title>
+    <meta
+      name="description"
+      content="UltraFetch is a stylish mobile-first downloader UI designed for direct media downloads, quick previews, and high-speed access."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="logo-badge">U</div>
+          <div>
+            <p class="eyebrow">Ultra speed</p>
+            <h1>UltraFetch</h1>
+          </div>
+        </div>
+        <button class="ghost-btn" type="button">Sign in</button>
+      </header>
+
+      <main class="main-panel">
+        <section class="hero-card">
+          <div class="hero-copy">
+            <p class="badge-text">Media downloader</p>
+            <h2>Download videos and files in seconds.</h2>
+            <p class="sub-copy">
+              Built for fast access on mobile. Paste a direct media URL and get a streamlined download flow.
+            </p>
+          </div>
+
+          <div class="download-box">
+            <label class="input-label" for="urlInput">Paste media URL</label>
+            <div class="input-row">
+              <input
+                id="urlInput"
+                type="url"
+                placeholder="https://example.com/video.mp4"
+                autocomplete="off"
+              />
+              <button id="downloadBtn" class="primary-btn" type="button">Download</button>
+            </div>
+
+            <div class="chip-row" aria-label="Supported platforms">
+              <button class="chip active" type="button">YouTube</button>
+              <button class="chip" type="button">Instagram</button>
+              <button class="chip" type="button">Facebook</button>
+              <button class="chip" type="button">TikTok</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats-grid" aria-label="Features overview">
+          <article class="stat-card">
+            <span class="stat-icon">⚡</span>
+            <strong>Fast</strong>
+            <p>Quick-access download flow</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-icon">📱</span>
+            <strong>Mobile-first</strong>
+            <p>Designed for small screens</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-icon">🔒</span>
+            <strong>Private</strong>
+            <p>Client-side focused workflow</p>
+          </article>
+        </section>
+
+        <section class="results-panel">
+          <div class="info-strip">
+            <div>
+              <p class="label">Status</p>
+              <strong id="statusText">Waiting for link</strong>
+            </div>
+            <div>
+              <p class="label">Format</p>
+              <strong id="formatText">Auto detect</strong>
+            </div>
+          </div>
+
+          <div class="preview-card" id="previewCard">
+            <div class="preview-placeholder">
+              <span class="play-icon">▶</span>
+            </div>
+            <div class="preview-meta">
+              <p class="label">Preview</p>
+              <h3 id="previewTitle">No media loaded</h3>
+              <p id="previewMessage">Paste a file or video URL to begin.</p>
+            </div>
+          </div>
+
+          <div class="action-row">
+            <button class="secondary-btn" id="sampleBtn" type="button">Try sample</button>
+            <button class="secondary-btn alt" id="clearBtn" type="button">Clear</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
