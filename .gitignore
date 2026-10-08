@@ -1,0 +1,50 @@
+# UltraFetch
+
+Fast. Simple. Ultra. - A mobile-first media downloader website with a lightweight backend for direct file downloads.
+
+## What this version includes
+- Mobile-first responsive UI
+- Direct media downloader flow
+- Backend API for downloading direct file URLs
+- Support for quick preview and status updates
+- Easy local startup for testing
+
+## Local run
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Start the server:
+```bash
+npm start
+```
+
+3. Open in browser:
+```text
+http://localhost:3000
+```
+
+## Notes
+- This project works best with direct file URLs such as `.mp4`, `.mp3`, `.jpg`, `.zip`, etc.
+- Platforms such as YouTube, Instagram, Facebook, and TikTok usually require platform-specific extraction logic and may not work with direct URL fallback alone.
+- The backend helps with direct downloads and avoids browser CORS limitations.
+
+## Project structure
+- `index.html` — frontend layout
+- `styles.css` — mobile-first styling
+- `script.js` — client-side download logic
+- `server.js` — Express backend for direct downloads
+- `package.json` — project setup and scripts
+
+## Future upgrade ideas
+- Add login or user dashboard
+- Add premium landing page sections
+- Add API support for social-media extraction
+- Add memory caching and download history
+- Add thumbnail previews and metadata cards
+
+## Important
+This is a demo downloader. If you want real support for social media sites like YouTube or Instagram, you need a platform-aware backend or a licensed service that supports those sites.
+
+
